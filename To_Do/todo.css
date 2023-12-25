@@ -1,0 +1,22 @@
+.container{
+    display:flexbox;
+    align-self: center;
+    margin: 10px;
+    padding:20px;
+    background-color: aquamarine;
+}
+.title {
+    text-align: center;
+    text-shadow: 5px;
+    font-weight: bold;
+}
+
+.td-input{
+    background-color: burlywood;
+    display: grid;
+}
+
+.display-td{
+    display: grid;
+
+}

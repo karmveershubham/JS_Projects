@@ -11,12 +11,43 @@
     font-weight: bold;
 }
 
-.td-input{
-    background-color: burlywood;
+.td-input , 
+.display-td {
     display: grid;
+    grid-template-columns: 70% 15% 10%;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 10px;
+    align-items: stretch;
 }
 
-.display-td{
-    display: grid;
+.name-input,
+.name-disaply,
+.due-date-input,
+.due-date-display
+{
+    font-size: 15px;
+    padding: 10px;
+}
+.due-date-display
+{
+    text-indent: 2%;
+}
 
+.add-td-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.delete-td-button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

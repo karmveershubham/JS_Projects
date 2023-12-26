@@ -1,4 +1,4 @@
-const todolist=[{name:"watch youtube", dueDate:"2023-12-22"}]
+const todolist=[]
 
 showTodolist();
 
@@ -7,9 +7,9 @@ function showTodolist(){
     todolist.forEach((todoObject, index) => { 
         const {name,dueDate} = todoObject;
         const html=`
-            <div>${name}</div>
-            <div>${dueDate}</div>
-            <button class="delete-todo-button js-delete-td-button">Delete</button>
+            <div class="name-display">${name}</div>
+            <div class="due-date-display">${dueDate}</div>
+            <button class="delete-td-button js-delete-td-button">Delete</button>
         `;
         todolistHTML += html
     });

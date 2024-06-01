@@ -42,6 +42,7 @@ function addTodo(){
     const name = inputElement.value;
     const inputDueDate=document.querySelector('.js-due-date-input')
     const dueDate = inputDueDate.value;
+
     document.querySelector('.js-add-td-button').removeEventListener('click', null);
 
     if(name==='' || dueDate===''){
@@ -55,3 +56,5 @@ function addTodo(){
     }
   
 }
+
+document.querySelector('.js-add-td-button').removeEventListener('click', null);

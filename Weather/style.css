@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #2222;
+    background: #1a1a33; 
 }
 .card{
     width:90%;
@@ -49,6 +49,7 @@ body{
 }
 .search button img{
     width: 16px;
+    padding-top: 5px;
 
 }
 
@@ -85,11 +86,13 @@ body{
 .weather{
     display: none;
 }
+p{
+    padding-left: 10px;
+}
 .error{
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
     display: none;
-
 }

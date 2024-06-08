@@ -96,3 +96,39 @@ p{
     margin-top: 10px;
     display: none;
 }
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    .card {
+        padding: 20px 15px;
+    }
+    
+    .search input {
+        padding: 8px 15px;
+        height: 50px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .search button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather h1 {
+        font-size: 35px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+
+    .humidity, .wind {
+        font-size: 24px;
+    }
+}

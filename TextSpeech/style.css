@@ -84,3 +84,66 @@ select{
     margin: 30px;
     background: #c05bec;
 }
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 35px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 200px;
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
+    }
+
+    select {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 28px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 90%;
+        height: 150px;
+        font-size: 13px;
+    }
+
+    button {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 10px 20px;
+    }
+
+    select {
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 5px 15px;
+        height: 40px;
+        border-radius: 20px;
+    }
+}

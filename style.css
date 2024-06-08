@@ -27,12 +27,14 @@ h1 {
     flex-direction:row;
 }
 .project {
+    width: 80%;
     margin: 10px 10px;
     align-items: center;
     background: #c4c1e0; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-wrap:nowrap;
 }
 .project:hover {
    
@@ -56,4 +58,35 @@ h1 {
     text-align: center;
     color: #fff;
     padding: 40px 0;
+}
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    .header-box {
+        padding: 15px 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .project a {
+        font-size: 1.2em;
+    }
+
+    .footer-bottom {
+        padding: 20px 0;
+        font-size: 12px;
+    }
 }

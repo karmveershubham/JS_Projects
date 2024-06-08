@@ -69,3 +69,18 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+    .container{
+        margin: 12%;
+        width: 90%;
+        max-width: 100%;
+    }
+    .display{
+        justify-content: left;
+    }
+    .display input{
+        width: 80%;
+    };
+
+}

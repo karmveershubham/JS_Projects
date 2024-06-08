@@ -1,62 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:'Poppins','sans-serif';
+    box-sizing:border-box;
+}
 body{
-    background-image: radial-gradient( rgba(255,255,255,1) 0%, rgb(180, 253, 255) 100% ) ;
+    background: #002339;
+    color: #fff;
+}
+body {
+    background: #002339;
+    color: #fff;
     width: 100%;
     height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.container{
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+.container {
+    margin: 50px auto 0;
+    padding: 25px;
+    max-width: 800px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .title {
-    font-size:40px;
-    line-height: 100px;
-    margin:25px 0px;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 30px 0;
     text-align: center;
+    color: #fff;
 }
 
-.to-do{
-    margin: 25px 0px;
+.to-do {
+    margin: 25px 0;
 }
-.td-input , 
+
+.td-input, 
 .display-td {
     display: grid;
-    grid-template-columns: 70% 15% 10%;
-    column-gap: 20px;
-    row-gap: 10px;
-    margin-bottom: 10px;
-    align-items: stretch;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
-.name-input,
-.due-date-input
-{
-    font-size: 20px;
+.name-input, 
+.due-date-input {
+    font-size: 18px;
     padding: 10px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
 }
-.name-display,
-.due-date-display
-{
-   font-size:20px;
-   text-indent: 3px;
-   padding: 10px;
+
+.name-display, 
+.due-date-display {
+    font-size: 18px;
+    padding: 10px;
+    text-indent: 5px;
+    background-color: #444;
+    border: 2px solid #555;
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box;
 }
 
 .add-td-button {
-    background-color: green;
+    background-color: #28a745;
     color: white;
     border: none;
     font-size: 20px;
+    padding: 14px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    grid-column: span 2;
+}
+
+.add-td-button:hover {
+    background-color: #218838;
 }
 
 .delete-td-button {
-    background-color: darkred;
+    background-color: #dc3545;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.delete-td-button:hover {
+    background-color: #c82333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .td-input, 
+    .display-td {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 10px;
+    }
+
+    .add-td-button, 
+    .delete-td-button {
+        font-size: 18px;
+        padding: 12px;
+        margin: 0 auto;
+    }
+
+    .name-input, 
+    .due-date-input,
+    .name-display, 
+    .due-date-display {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .td-input, 
+    .display-td {
+        grid-template-columns: 1fr;
+    }
+
+    .add-td-button, 
+    .delete-td-button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .name-input, 
+    .due-date-input,
+    .name-display, 
+    .due-date-display {
+        font-size: 14px;
+        padding: 6px;
+    }
 }

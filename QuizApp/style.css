@@ -71,3 +71,9 @@ body{
 .incorrect{
     background: #ff9393;
 }
+
+@media(max-width:480px){
+    .app{
+        width: 90%;
+    }
+}

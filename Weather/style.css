@@ -99,6 +99,7 @@ p{
 /* Media Query for Phones */
 @media (max-width: 600px) {
     .card {
+        width: 90%;
         padding: 20px 15px;
     }
     
